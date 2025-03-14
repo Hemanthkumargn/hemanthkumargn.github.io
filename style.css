@@ -76,15 +76,6 @@ nav a {
     border-radius: 5px;
 }
 
-/* Contact Section */
-.contact-btn {
-    display: inline-block;
-    background: #4A148C;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
 /* Footer */
 .footer-container {
     display: flex;
@@ -97,6 +88,7 @@ nav a {
     margin: 0 10px;
     font-size: 20px;
 }
+
 
 
 
