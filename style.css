@@ -1,36 +1,74 @@
+/* Apply Google Fonts */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f8f9fa;
+    background: #f4f4f4;
     color: #333;
 }
 
+/* Navigation Bar */
 header {
-    background: #0073e6;
-    color: white;
-    text-align: center;
+    background: #20232a;
     padding: 20px;
+    text-align: center;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/* Section Layout */
 section {
-    margin: 20px;
+    max-width: 900px;
+    margin: 50px auto;
     padding: 20px;
     background: white;
-    box-shadow: 0px 0px 10px #ddd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
-h2 {
+/* Project Cards */
+.project {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 4px solid #0073e6;
+    background: #f9f9f9;
+}
+
+.project h3 {
+    margin-top: 0;
     color: #0073e6;
 }
 
-.project {
-    margin-bottom: 15px;
+.project a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: 600;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background: #0073e6;
+    background: #20232a;
     color: white;
 }
+
