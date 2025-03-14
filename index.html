@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hemanthkumar Gottigehalli Nanjappa | Portfolio</title>
+
+    <!-- External Styles & Animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- JavaScript for Animations -->
+    <script defer src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </head>
 <body>
+
     <header>
         <div class="container">
             <h1>Hemanthkumar Gottigehalli Nanjappa</h1>
@@ -21,19 +30,23 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="about">
+    <section id="about" data-aos="fade-up">
         <div class="container">
             <h2>About Me</h2>
-            <p>I am a Data Analyst with expertise in SQL, Python, Power BI, and Tableau. 
-               I specialize in transforming raw data into meaningful insights to drive business growth and decision-making.</p>
+            <div class="about-content">
+                <img src="assets/profile.jpg" alt="Hemanth Kumar" class="profile-img">
+                <p>I am a Data Analyst with five years of experience in SQL, Python, Power BI, and Tableau. I specialize in transforming data into meaningful insights that drive business decisions.</p>
+            </div>
+            <p>My expertise spans business intelligence, KPI tracking, predictive analytics, and data visualization. Passionate about leveraging data to improve business efficiency.</p>
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" data-aos="fade-up">
         <div class="container">
             <h2>Projects</h2>
             <div class="project">
@@ -50,7 +63,21 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="testimonials" data-aos="fade-up">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>"Hemanth's ability to translate raw data into meaningful insights has significantly improved our business processes."</p>
+                <h4>- John Doe, Senior Data Scientist</h4>
+            </div>
+            <div class="testimonial">
+                <p>"His expertise in SQL and Power BI helped streamline our analytics pipeline, reducing reporting time by 40%."</p>
+                <h4>- Jane Smith, Business Intelligence Manager</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
         <div class="container">
             <h2>Contact</h2>
             <p>Email: hemanthkumargn99@gmail.com</p>
@@ -64,6 +91,8 @@
             <p>© 2024 Hemanthkumar Gottigehalli Nanjappa. All rights reserved.</p>
         </div>
     </footer>
+
 </body>
 </html>
+
 
