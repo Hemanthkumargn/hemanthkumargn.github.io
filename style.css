@@ -1,44 +1,57 @@
-/* Apply Google Fonts */
+/* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #ffffff;
     color: #333;
 }
 
-/* Navigation Bar */
-header {
-    background: #20232a;
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
     padding: 20px;
-    text-align: center;
 }
 
+/* Header */
+header {
+    background: #f8f9fa;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Navigation */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    color: white;
+    background: #0073e6;
+    padding: 10px 0;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
 nav a {
     text-decoration: none;
     color: white;
     font-weight: 600;
+    transition: color 0.3s;
 }
 
-/* Section Layout */
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Sections */
 section {
-    max-width: 900px;
-    margin: 50px auto;
+    margin: 50px 0;
     padding: 20px;
     background: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -62,13 +75,24 @@ section {
     text-decoration: none;
     color: #0073e6;
     font-weight: 600;
+    transition: color 0.3s;
+}
+
+.project a:hover {
+    color: #ffcc00;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background: #20232a;
     color: white;
 }
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
 
