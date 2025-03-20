@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hemanthkumar Gottigehalli Nanjappa | Portfolio</title>
 
-    <!-- External Styles & Animations -->
+    <!-- External Styles & Fonts -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <!-- JavaScript for Animations -->
     <script defer src="script.js"></script>
@@ -19,8 +22,8 @@
 </head>
 <body>
 
-    <!-- Logo and Navigation -->
-    <header>
+    <!-- Navigation -->
+    <header class="sticky-header">
         <div class="logo">HK</div>
         <nav>
             <ul>
@@ -32,14 +35,22 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
+    <section id="hero" data-aos="fade-up">
+        <div class="container">
+            <h1>Hi, I'm <span class="highlight">Hemanth Kumar</span></h1>
+            <p>A Data Analyst turning data into actionable insights 📊</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" data-aos="fade-up">
         <div class="container about-container">
             <div class="about-text">
-                <h1>Hemanthkumar Gottigehalli Nanjappa</h1>
-                <p>Data analyst well-versed in extracting actionable insights from complex datasets to drive informed business decisions.</p>
-                <p>Proficient in SQL, Python, Tableau, and Power BI with expertise in data visualization, reporting, and predictive analytics.</p>
-                <a href="#about-more" class="about-link">About Me →</a>
+                <h2>About Me</h2>
+                <p>Data Analyst skilled in SQL, Python, Tableau, and Power BI. Passionate about extracting meaningful insights to solve real-world problems.</p>
+                <a href="#contact" class="about-link">Contact Me</a>
             </div>
             <div class="about-img">
                 <img src="assets/profile.jpg" alt="Hemanth Kumar">
@@ -53,24 +64,17 @@
             <h2>My Projects</h2>
             <div class="project-grid">
                 <div class="project">
-                    <img src="assets/amazon.jpg" alt="Amazon Review Analysis">
-                    <span class="badge">PYTHON</span>
-                    <p>Conducted sentiment analysis on Amazon customer reviews using NLP techniques.</p>
-                    <a href="https://github.com/Hemanthkumargn/Amazon_Sentiment_Analysis" target="_blank">View Project</a>
+                   <img src="assets/lung_cancer.jpg" alt="Lung Cancer Prediction">
+                    <span class="badge">R</span>
+                    <p>Predicted lung cancer using logistic regression and PCA on medical datasets.</p>
+                    <a href="https://github.com/Hemanthkumargn/LUNG_CANCER_ANALYSIS" target="_blank">View Project</a>
                 </div>
 
                 <div class="project">
                     <img src="assets/nyc_crime.jpg" alt="NYC Crime Analysis">
                     <span class="badge">TABLEAU</span>
-                    <p>Analyzed NYC crime data (2006-2019) to gain insights into patterns, trends, and factors.</p>
+                    <p>Crime data visualization and trend analysis (2006-2019).</p>
                     <a href="https://public.tableau.com/app/profile/hemanthkumargn" target="_blank">View Project</a>
-                </div>
-
-                <div class="project">
-                    <img src="assets/lung_cancer.jpg" alt="Lung Cancer Prediction">
-                    <span class="badge">R</span>
-                    <p>Predicted lung cancer using logistic regression and PCA on medical datasets.</p>
-                    <a href="https://github.com/Hemanthkumargn/LUNG_CANCER_ANALYSIS" target="_blank">View Project</a>
                 </div>
             </div>
         </div>
@@ -80,25 +84,17 @@
     <section id="contact" data-aos="fade-up">
         <div class="container">
             <h2>Let's Connect!</h2>
-            <a href="mailto:hemanthkumargn99@gmail.com" class="contact-btn">Contact Me</a>
+            <a href="mailto:hemanthkumargn99@gmail.com" class="contact-btn">Email Me</a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/hemanthkumargn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Hemanthkumargn" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </section>
 
     <footer>
-        <div class="container footer-container">
-            <p>© 2024 Hemanthkumar Gottigehalli Nanjappa</p>
-            <div class="social-icons">
-                <a href="mailto:hemanthkumargn99@gmail.com">✉</a>
-                <a href="https://www.linkedin.com/in/hemanthkumargn" target="_blank">🔗</a>
-                <a href="https://github.com/Hemanthkumargn" target="_blank">🐱</a>
-            </div>
-        </div>
+        <p>© 2024 Hemanth Kumar</p>
     </footer>
 
 </body>
 </html>
-
-
-
-
-
