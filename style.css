@@ -1,59 +1,95 @@
-/* General Styles */
+/* main.css */
+
+/* Basic Settings */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #ffffff;
-    color: #333;
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    transition: background-color 0.5s, color 0.5s;
 }
 
-/* Sticky Header */
-.sticky-header {
-    position: fixed;
-    top: 0;
+.dark body {
+    background-color: #111827;
+    color: #f9fafb;
+}
+
+/* Sections */
+section {
+    scroll-margin-top: 100px;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+
+/* Skill Bar Styles */
+.skill-bar {
     width: 100%;
-    background: #4A148C;
-    padding: 15px 0;
-    z-index: 1000;
+    background-color: #e5e7eb;
+    height: 8px;
+    border-radius: 9999px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.skill-progress {
+    height: 8px;
+    border-radius: 9999px;
+    background: linear-gradient(to right, #06b6d4, #3b82f6);
+    transition: width 2s ease-in-out;
+}
+
+/* Timeline Container */
+.timeline-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 1rem;
+    scroll-behavior: smooth;
 }
 
-/* Hero Section */
-#hero {
-    text-align: center;
-    padding: 80px;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: white;
+.timeline-card {
+    flex-shrink: 0;
+    width: 300px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
-.highlight {
-    color: #FFD700;
+.timeline-card:hover {
+    transform: translateY(-5px);
 }
 
-/* Project Section */
-.project {
-    transition: transform 0.3s ease-in-out;
+.dark .timeline-card {
+    background: #1f2937;
+    color: #f9fafb;
 }
 
-.project:hover {
-    transform: scale(1.05);
+/* Buttons */
+button {
+    cursor: pointer;
 }
 
-/* Contact Section */
-.contact-btn {
-    display: inline-block;
-    background: #4A148C;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    height: 8px;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #4A148C;
-    color: white;
+::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 4px;
+}
+
+/* Smooth transitions */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .timeline-container {
+        flex-direction: column;
+    }
 }
