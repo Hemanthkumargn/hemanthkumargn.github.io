@@ -1,100 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hemanthkumar Gottigehalli Nanjappa | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hemanthkumar Gottigehalli Nanjappa | Portfolio</title>
 
-    <!-- External Styles & Fonts -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Font Awesome for Icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    <!-- JavaScript for Animations -->
-    <script defer src="script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Lottie Player -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
-<body>
 
-    <!-- Navigation -->
-    <header class="sticky-header">
-        <div class="logo">HK</div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="assets/resume.pdf" class="resume-btn" target="_blank">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
 
-    <!-- Hero Section -->
-    <section id="hero" data-aos="fade-up">
-        <div class="container">
-            <h1>Hi, I'm <span class="highlight">Hemanth Kumar</span></h1>
-            <p>A Data Analyst turning data into actionable insights 📊</p>
-            <a href="#projects" class="btn">View My Work</a>
+  <!-- Scroll Progress Bar -->
+  <div id="progressBar" class="fixed top-0 left-0 w-0 h-1 bg-emerald-400 z-50"></div>
+
+  <div class="flex flex-col md:flex-row min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-full md:w-1/3 bg-blue-900 p-6 flex flex-col items-center text-white relative">
+      <img id="profilePic" src="assets/profile.jpg" alt="Profile" class="w-40 h-40 rounded-full mb-4 border-4 border-white shadow-lg">
+      <h1 id="fullName" class="text-3xl font-bold mb-1 text-center">Hemanthkumar Gottigehalli Nanjappa</h1>
+      <p id="designation" class="text-lg text-emerald-300 mb-2 text-center">Data Analyst</p>
+      <p id="location" class="text-sm mb-2">United States</p>
+      <p id="phoneNumber" class="text-sm mb-2">+1 (551) 229-8815</p>
+      <p id="email" class="text-sm mb-4">hemanthkumargn99@gmail.com</p>
+
+      <div class="flex space-x-4 mt-2">
+        <a href="https://linkedin.com/in/hemanthkumargn" target="_blank" class="hover:text-emerald-400">LinkedIn</a>
+        <a href="https://github.com/Hemanthkumargn" target="_blank" class="hover:text-emerald-400">GitHub</a>
+      </div>
+
+      <!-- Resume Download -->
+      <div class="flex flex-col items-center mt-6 space-y-4">
+        <a href="assets/Hemanth_CV_Analyst_SQL_Excel_Tableau_Updated.pdf" download class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-2 rounded transition">
+          📄 Download Resume
+        </a>
+      </div>
+
+      <!-- Interests -->
+      <div class="mt-10 text-center text-sm">
+        <h2 class="font-bold text-lg mb-1">Interests</h2>
+        <p id="dynamicInterest" class="text-emerald-300 h-5 animate__animated">Data Analysis, Visualization, Predictive Modeling, Dashboard Development</p>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8 space-y-16">
+
+      <!-- Hero Section -->
+      <section class="text-center">
+        <lottie-player src="assets/lottie/tech-dots.json" background="transparent" speed="1" loop autoplay style="width: 300px; height: 300px; margin: auto;"></lottie-player>
+        <h2 class="text-4xl font-bold mt-6 animate__animated animate__fadeInUp">Turning data into powerful insights 🚀</h2>
+      </section>
+
+      <!-- About Me -->
+      <section>
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+          Data Analyst with 5+ years of experience leveraging data to optimize strategies, website performance, and user engagement. Skilled in SQL, Python, Excel, Tableau, and Power BI. Adept at driving actionable insights and strategic recommendations.
+        </p>
+      </section>
+
+      <!-- Skills Section -->
+      <section>
+        <h2 class="text-3xl font-bold mb-6">Skills & Expertise</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="skill"><h4>SQL</h4><div class="skill-bar"><div class="skill-progress" data-skill="95%"></div></div></div>
+          <div class="skill"><h4>Python</h4><div class="skill-bar"><div class="skill-progress" data-skill="85%"></div></div></div>
+          <div class="skill"><h4>Tableau</h4><div class="skill-bar"><div class="skill-progress" data-skill="90%"></div></div></div>
+          <div class="skill"><h4>Excel (Advanced, VBA)</h4><div class="skill-bar"><div class="skill-progress" data-skill="90%"></div></div></div>
+          <div class="skill"><h4>Power BI</h4><div class="skill-bar"><div class="skill-progress" data-skill="80%"></div></div></div>
+          <div class="skill"><h4>ETL Pipelines</h4><div class="skill-bar"><div class="skill-progress" data-skill="85%"></div></div></div>
+          <div class="skill"><h4>Data Modeling</h4><div class="skill-bar"><div class="skill-progress" data-skill="80%"></div></div></div>
         </div>
-    </section>
+      </section>
 
-    <!-- About Section -->
-    <section id="about" data-aos="fade-up">
-        <div class="container about-container">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>Data Analyst skilled in SQL, Python, Tableau, and Power BI. Passionate about extracting meaningful insights to solve real-world problems.</p>
-                <a href="#contact" class="about-link">Contact Me</a>
-            </div>
-            <div class="about-img">
-                <img src="assets/profile.jpg" alt="Hemanth Kumar">
-            </div>
+      <!-- Professional Summary -->
+      <section>
+        <h2 class="text-3xl font-bold mb-4">Professional Summary</h2>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+          Experienced in building dashboards, predictive models, and performance reports. Skilled in cross-functional collaboration, statistical analysis, and performance optimization across industries such as NGO, Technology, and E-commerce.
+        </p>
+      </section>
+
+      <!-- Career Timeline -->
+      <section>
+        <h2 class="text-3xl font-bold mb-8 text-center">Career Timeline</h2>
+        <div id="timelineContainer" class="timeline-container">
+          <!-- Timeline items will be dynamically inserted by app.js -->
         </div>
-    </section>
+      </section>
 
-    <!-- Projects Section -->
-    <section id="projects" data-aos="fade-up">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project">
-                   <img src="assets/lung_cancer.jpg" alt="Lung Cancer Prediction">
-                    <span class="badge">R</span>
-                    <p>Predicted lung cancer using logistic regression and PCA on medical datasets.</p>
-                    <a href="https://github.com/Hemanthkumargn/LUNG_CANCER_ANALYSIS" target="_blank">View Project</a>
-                </div>
+      <!-- Academic Projects -->
+      <section>
+        <h2 class="text-3xl font-bold mb-4">Academic Projects</h2>
+        <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300 space-y-2">
+          <li><strong>Lung Cancer Prediction:</strong> Built logistic regression models with 95% accuracy using R scripts.</li>
+          <li><strong>NYC Crime Data Analysis:</strong> Analyzed crime data trends and visualized results using Tableau dashboards.</li>
+        </ul>
+      </section>
 
-                <div class="project">
-                    <img src="assets/nyc_crime.jpg" alt="NYC Crime Analysis">
-                    <span class="badge">TABLEAU</span>
-                    <p>Crime data visualization and trend analysis (2006-2019).</p>
-                    <a href="https://public.tableau.com/app/profile/hemanthkumargn" target="_blank">View Project</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    </main>
+  </div>
 
-    <!-- Contact Section -->
-    <section id="contact" data-aos="fade-up">
-        <div class="container">
-            <h2>Let's Connect!</h2>
-            <a href="mailto:hemanthkumargn99@gmail.com" class="contact-btn">Email Me</a>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/hemanthkumargn" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Hemanthkumargn" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2024 Hemanth Kumar</p>
-    </footer>
-
+  <!-- Scripts -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/typewriter.js"></script>
+  <script src="scripts/darkmode.js"></script>
+  <script src="scripts/saveProfile.js"></script>
 </body>
 </html>
